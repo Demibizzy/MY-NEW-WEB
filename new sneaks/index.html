@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demilade Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #020617, #0f172a);
+    color: white;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    background: rgba(2, 6, 23, 0.7);
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #cbd5f5;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    animation: fadeIn 1.5s ease;
+}
+
+.hero img {
+    width: 130px;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    margin-bottom: 15px;
+    transition: 0.4s;
+}
+
+.hero img:hover {
+    transform: scale(1.1);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #38bdf8, #0ea5e9);
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeUp 1s ease;
+}
+
+/* GLASS CARD */
+.project-card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 400px;
+    transition: 0.4s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+/* GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.08);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(2,6,23,0.7);
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Demilade</h2>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#gallery">Sneakers</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="7c0ed94cadc49e17b4122630ea1aefc5.png">
+    <h2>Hello, I'm Demilade 👋</h2>
+    <p>Web Developer • Sneaker Seller</p>
+
+    <a class="btn" href="https://wa.me/2347081318646?text=Hello%20I%20want%20to%20buy%20your%20sneakers">
+        Buy Sneakers
+    </a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I build clean websites and run a sneaker business.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>Sneaker Store</h3>
+        <p>Online sneaker shop with WhatsApp ordering.</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Portfolio</h3>
+        <p>Personal website with animations.</p>
+    </div>
+
+</section>
+
+<section id="gallery">
+    <h2>Sneakers</h2>
+
+    <div class="gallery">
+        <img src="WhatsApp Image 2026-04-14 at 6.19.52 PM (3).jpeg">
+        <img src="WhatsApp Image 2026-04-14 at 6.19.53 PM (2).jpeg">
+        <img src="WhatsApp Image 2026-04-14 at 6.20.00 PM (1).jpeg">
+        <img src="WhatsApp Image 2026-04-14 at 6.20.06 PM.jpeg">
+        <img src="WhatsApp Image 2026-04-14 at 6.20.00 PM (1).jpeg">
+        <img src="WhatsApp Image 2026-04-14 at 6.20.06 PM.jpeg">
+    </div> 
+
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <p>
+        <a href="https://wa.me/2347081318646" style="color:#38bdf8;">
+            Chat on WhatsApp
+        </a>
+    </p>
+
+    <p>
+        <a href="https://www.instagram.com/q.bizzy01?igsh=MWxhZ2czYzhrNXU4Zw==" style="color:#38bdf8;">
+            Instagram
+        </a>
+    </p>
+
+</section>
+
+<footer>
+    <p>© 2026 Demilade</p>
+</footer>
+
+</body>
+</html>
